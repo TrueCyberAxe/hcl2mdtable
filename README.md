@@ -33,7 +33,7 @@ Doing this `$ python hcl2mdt.py variables.tf`
 
 will give you that 
 ```
-| variable   | default | required | description                                                        |
+| Variable   | Default | Required | Description                                                        |
 |------------|---------|----------|--------------------------------------------------------------------|
 | datacenter | ams03   | No       | Data center to provision in                                        |
 | servers    |         | Yes      | Number of servers to provision                                     |
@@ -43,7 +43,7 @@ will give you that
 
 which Github parses like this
 
-| variable   | default | required | description                                                        |
+| Variable   | Default | Required | Description                                                        |
 |------------|---------|----------|--------------------------------------------------------------------|
 | datacenter | ams03   | No       | Data center to provision in                                        |
 | servers    |         | Yes      | Number of servers to provision                                     |
