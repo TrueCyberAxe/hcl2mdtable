@@ -41,7 +41,7 @@ with open(sys.argv[1], 'r') as fp:
     # Generate Table
     print("| {} | {} | {} | {} |".format('variable'.ljust(col1),'default'.ljust(col2),'required'.ljust(col3),'description'.ljust(col4)))
     print("|-{}-|-{}-|-{}-|-{}-|".format('-'*col1,'-'*col2,'-'*col3,'-'*col4))
-    #print "| variable | default | required | description |"
+    #print "| Variable | Default | Required | Description |"
     #print "|----------|---------|----------|-------------|"
     for key in obj['variable'].keys():
         default = obj['variable'][key].get('default', key + '%defvalue%')
