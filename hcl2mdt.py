@@ -4,11 +4,11 @@ with open(sys.argv[1], 'r') as fp:
     try:
       obj = hcl.load(fp)
     except ValueError as e:
-      print(e + '\n')
+      print(str(e) + '\n')
       print('Note: pyhcl 0.4.4 and below do not seem to support validation sections in variables.')
       exit(1)
     except Exception as e:
-      print(e + '\n')
+      print(str(e) + '\n')
       print('Error Loading File: ' + sys.argv[1] + ', May need to update pyhcl.')
       exit(1)
 
